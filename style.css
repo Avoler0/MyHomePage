@@ -12,6 +12,7 @@
   }
 h1{
   text-align: center;
+  border-top:1px solid gray;
   border-bottom:1px solid gray;
   font-size: 45px;
   margin:0;
@@ -36,5 +37,4 @@ ol{
 }
 h1{
   border-bottom:none;
-
 }
