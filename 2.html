@@ -4,20 +4,25 @@
 <title>WEB1 - css</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="./style.css">
+<script src="colors.js">
+</script>
 </head>
 <body>
-  <div class="topico">
-    <input type="image" src="./github_before.png" onclick="window.open('https://github.com/Avoler0')" style="float:left"
-    width="30px">
-    <input type="image" src="./facebook_before.png" onclick="window.open('https://facebook.com')" style="float:left"
-    width="30px">
-    <input type="image" src="./blog_before.png" onclick="window.open('https://blog.naver.com/avoler01')" style="float:left"
-    width="30px">
-    <input type="image" src="./homepage_before.png" onclick="window.open('http://이정.웹.한국')" style="float:left"
-    width="30px">
-    <input type="image" src="./youtube_before.png" onclick="window.open('https://www.youtube.com/')" style="float:left"
-    width="30px">
+  <div class="topicon">
+    <input type="image" src="icon/github_before.png" onmouseover="this.src='icon/github_after.png'"
+    onmouseout="this.src='icon/github_before.png'" onclick="window.open('https://github.com/Avoler0')">
+    <input type="image" src="icon/facebook_before.png" onmouseover="this.src='icon/facebook_after.png'"
+    onmouseout="this.src='icon/facebook_before.png'" onclick="window.open('https://facebook.com')">
+    <input type="image" src="icon/blog_before.png"  onmouseover="this.src='icon/blog_after.png'"
+      onmouseout="this.src='icon/blog_before.png'" onclick="window.open('https://blog.naver.com/avoler01')">
+    <input type="image" src="icon/homepage_before.png" onmouseover="this.src='icon/homepage_after.png'"
+      onmouseout="this.src='icon/homepage_before.png'" onclick="window.open('http://이정.웹.한국')">
+    <input type="image" src="icon/youtube_before.png" onmouseover="this.src='icon/youtube_after.png'"
+    onmouseout="this.src='icon/youtube_before.png'" onclick="window.open('https://www.youtube.com/')">
   </div>
+  <input style="float:right" type="button" value="Dark" onclick="
+  lightDarkHandler(this);
+  ">
 <h1><a href="index.html">WEB</a></h1>
 <div id="grid">
   <ol>
