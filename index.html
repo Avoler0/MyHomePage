@@ -8,17 +8,20 @@
 </script>
 </head>
 <body>
-  <div class="topicon">
-    <input type="image" src="icon/github_before.png" onmouseover="this.src='icon/github_after.png'"
-    onmouseout="this.src='icon/github_before.png'" onclick="window.open('https://github.com/Avoler0')">
-    <input type="image" src="icon/facebook_before.png" onmouseover="this.src='icon/facebook_after.png'"
+  <div id="top" >
+    <input type="image" class="icon" src="icon/github_before.png" onmouseover="this.src='icon/github_after.png'"
+    onmouseout="this.src='icon/github_before.png'" onclick="window.open('https://github.com/Avoler0')" >
+    <input type="image" class="icon" src="icon/facebook_before.png" onmouseover="this.src='icon/facebook_after.png'"
     onmouseout="this.src='icon/facebook_before.png'" onclick="window.open('https://facebook.com')">
-    <input type="image" src="icon/blog_before.png"  onmouseover="this.src='icon/blog_after.png'"
+    <input type="image" class="icon" src="icon/blog_before.png"  onmouseover="this.src='icon/blog_after.png'"
       onmouseout="this.src='icon/blog_before.png'" onclick="window.open('https://blog.naver.com/avoler01')">
-    <input type="image" src="icon/homepage_before.png" onmouseover="this.src='icon/homepage_after.png'"
+    <input type="image" class="icon" src="icon/homepage_before.png" onmouseover="this.src='icon/homepage_after.png'"
       onmouseout="this.src='icon/homepage_before.png'" onclick="window.open('http://이정.웹.한국')">
-    <input type="image" src="icon/youtube_before.png" onmouseover="this.src='icon/youtube_after.png'"
+    <input type="image" class="icon" src="icon/youtube_before.png" onmouseover="this.src='icon/youtube_after.png'"
     onmouseout="this.src='icon/youtube_before.png'" onclick="window.open('https://www.youtube.com/')">
+  <input style="float:right" type="button" value="Dark" onclick="
+  lightDarkHandler(this);
+  ">
   </div>
 <h1><a href="index.html">WEB</a></h1>
 <div id="grid">
