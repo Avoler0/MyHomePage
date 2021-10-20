@@ -4,8 +4,8 @@
 <title>WEB1 - MAIN</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="./style.css">
-<script src="colors.js">
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="ajax.js"></script>
 </head>
 <body>
   <div id="top" >
@@ -26,16 +26,27 @@
 <h1><a href="index.html">WEB</a></h1>
 <div id="grid">
 <ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
+  <li><a onclick="fetchPage(html)">HTML</a></li>
+  <li><a onclick="fetchPage(css)">CSS</a></li>
+  <li><a onclick="fetchPage(javascript)">JavaScript</a></li>
   <li><a href="https://avoler0.github.io/Report/">Report</a></li>
 </ol>
 <div id="article">
-<h2>Welcome</h2>
-  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+  <article>
+  <h2>Welcome</h2>
+  <p>ddffThe World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
   <p><iframe width="300" height="170" src="https://www.youtube.com/embed/bJTIARsqyJ8?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  </article>
 </div>
 </div>
+<script>
+  function fetchPage(name){
+  fetch('name').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('article').innerHTML = text;
+    })
+  });
+}
+</script>
 </body>
 </html>
